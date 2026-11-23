@@ -1,0 +1,14 @@
+{
+  "name": "blog-precheck",
+  "description": "AWS 테크 블로그 저자용 사전 점검 스킬 — 리뷰 요청 전 셀프 게이트 채점과 WordPress 변환",
+  "owner": {
+    "name": "Youngjin Kim"
+  },
+  "plugins": [
+    {
+      "name": "blog-review",
+      "source": "./plugins/blog-review",
+      "description": "AWS 테크 블로그 원고를 리뷰 요청 전에 저자가 먼저 점검 (셀프 게이트 채점 → WordPress HTML 변환 → 내용 리뷰 → Slack 공지 문구). WordPress 업로드는 하지 않음"
+    }
+  ]
+}
