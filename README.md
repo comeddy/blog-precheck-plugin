@@ -48,3 +48,7 @@ plugins/blog-precheck/
 ```
 
 push하기 전에 `claude plugin validate .`로 매니페스트를 검증합니다.
+
+## 라이선스와 출처
+
+[MIT License](LICENSE)로 배포합니다. 이 플러그인은 [ssMinji/skills](https://github.com/ssMinji/skills)의 blog-review 플러그인을 바탕으로 저자용으로 고친 것입니다.

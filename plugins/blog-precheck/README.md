@@ -130,3 +130,7 @@ plugins/blog-precheck/
 ## 출처
 
 리뷰어용 [ssMinji/skills](https://github.com/ssMinji/skills)의 blog-review 플러그인을 바탕으로 저자용으로 고친 버전입니다. 채점 기준과 변환 규칙은 같고, WordPress 미디어 업로드 단계만 뺐습니다.
+
+## 라이선스
+
+[MIT License](../../LICENSE)로 배포합니다.
