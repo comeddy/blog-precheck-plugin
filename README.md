@@ -1,4 +1,4 @@
-# blog-review 플러그인 (blog-precheck 스킬)
+# blog-precheck 플러그인
 
 AWS 테크 블로그 저자가 리뷰를 요청하기 전에 본인 원고(docx 또는 md)를 먼저 점검하는 Claude Code 플러그인입니다. 원고를 6개 기준으로 채점하고, WordPress에 붙여넣을 HTML로 변환하고, 저자가 고칠 코멘트 목록을 만듭니다. WordPress에는 아무것도 올리지 않습니다.
 
@@ -8,14 +8,14 @@ Claude Code에서 마켓플레이스를 추가한 뒤 플러그인을 설치합�
 
 ```
 /plugin marketplace add comeddy/blog-precheck
-/plugin install blog-review@blog-precheck
+/plugin install blog-precheck@blog-precheck
 ```
 
 터미널에서는 다음과 같이 설치합니다.
 
 ```bash
 claude plugin marketplace add comeddy/blog-precheck
-claude plugin install blog-review@blog-precheck
+claude plugin install blog-precheck@blog-precheck
 ```
 
 업데이트는 `/plugin marketplace update blog-precheck`로 받습니다.
@@ -24,10 +24,10 @@ docx 원고를 다루려면 `python-docx`가 필요합니다 (`pip install pytho
 
 ## 사용
 
-설치하면 `/blog-review:blog-precheck` 스킬이 생깁니다. 원고 경로를 함께 넘기거나, "블로그 사전 점검", "리뷰 전 점검", "워드프레스 변환"처럼 요청하면 됩니다.
+설치하면 `/blog-precheck:blog-precheck` 스킬이 생깁니다. 원고 경로를 함께 넘기거나, "블로그 사전 점검", "리뷰 전 점검", "워드프레스 변환"처럼 요청하면 됩니다.
 
 ```
-/blog-review:blog-precheck ~/Downloads/my-draft.docx
+/blog-precheck:blog-precheck ~/Downloads/my-draft.docx
 ```
 
 진행 순서는 다음과 같습니다.
@@ -51,7 +51,7 @@ docx 원고를 다루려면 `python-docx`가 필요합니다 (`pip install pytho
 
 ## 셀프 게이트 기준 (gate-report.md)
 
-원고를 리뷰어에게 넘기기 전에 6개 기준으로 점수를 매기고, 통과 조건에 못 미치면 저자가 먼저 고칩니다. 전체 가이드는 [gate.md](plugins/blog-review/skills/blog-precheck/gate.md)에 있습니다.
+원고를 리뷰어에게 넘기기 전에 6개 기준으로 점수를 매기고, 통과 조건에 못 미치면 저자가 먼저 고칩니다. 전체 가이드는 [gate.md](plugins/blog-precheck/skills/blog-precheck/gate.md)에 있습니다.
 
 ### 통과 조건
 
@@ -79,7 +79,7 @@ docx 원고를 다루려면 `python-docx`가 필요합니다 (`pip install pytho
 ### 중복과 군더더기 지표
 
 ```bash
-python3 -I plugins/blog-review/skills/blog-precheck/scripts/redundancy_metrics.py <원고.docx|.md>
+python3 -I plugins/blog-precheck/skills/blog-precheck/scripts/redundancy_metrics.py <원고.docx|.md>
 ```
 
 보일러플레이트 문단 반복, 문장 반복, 메타 강조 문장, 따옴표 조어 밀도, 6문장 이상 문단, 상투어 밀도를 측정합니다. 같은 뜻을 다른 문장으로 되풀이하는 재진술은 스크립트가 잡지 못하므로 채점자가 직접 셉니다. AI가 썼는지가 아니라 읽기에 방해되는지만 봅니다.
@@ -118,7 +118,7 @@ python3 -I plugins/blog-review/skills/blog-precheck/scripts/redundancy_metrics.p
 
 ```
 .claude-plugin/marketplace.json           # 마켓플레이스 정의
-plugins/blog-review/
+plugins/blog-precheck/
 ├── .claude-plugin/plugin.json            # 플러그인 정의
 └── skills/blog-precheck/
     ├── SKILL.md                          # 워크플로우 본문

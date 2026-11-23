@@ -1,5 +1,5 @@
 {
-  "name": "blog-review",
+  "name": "blog-precheck",
   "description": "AWS 테크 블로그 저자가 리뷰 요청 전에 본인 원고(docx/md)를 먼저 점검하는 워크플로우. 셀프 게이트 채점, WordPress HTML 변환, 구조·내용 품질 리뷰, 게시 후 Slack 공지 문구 작성까지 수행하며 WordPress 업로드는 하지 않음",
   "author": {
     "name": "Youngjin Kim"
