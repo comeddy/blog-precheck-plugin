@@ -1,6 +1,6 @@
 {
-  "name": "blog-precheck",
-  "description": "AWS 테크 블로그 저자용 사전 점검 스킬 — 리뷰 요청 전 셀프 게이트 채점과 WordPress 변환",
+  "name": "comeddy",
+  "description": "Claude Code 플러그인 모음 — AWS 테크 블로그 사전 점검 등",
   "owner": {
     "name": "Youngjin Kim"
   },
