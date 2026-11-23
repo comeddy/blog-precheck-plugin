@@ -7,14 +7,14 @@ AWS 테크 블로그 저자가 리뷰를 요청하기 전에 본인 원고(docx 
 Claude Code에서 마켓플레이스를 추가한 뒤 플러그인을 설치합니다.
 
 ```
-/plugin marketplace add comeddy/claude-plugins
+/plugin marketplace add comeddy/blog-precheck-plugin
 /plugin install blog-precheck@comeddy
 ```
 
 터미널에서는 다음과 같이 설치합니다.
 
 ```bash
-claude plugin marketplace add comeddy/claude-plugins
+claude plugin marketplace add comeddy/blog-precheck-plugin
 claude plugin install blog-precheck@comeddy
 ```
 

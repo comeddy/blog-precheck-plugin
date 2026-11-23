@@ -1,14 +1,15 @@
-# claude-plugins
+# blog-precheck-plugin
 
-Claude Code 플러그인 모음입니다. 마켓플레이스를 한 번 추가하면 필요한 플러그인을 골라 설치할 수 있습니다.
+AWS 테크 블로그 저자용 사전 점검 스킬 blog-precheck을 Claude Code 플러그인으로 배포하는 저장소입니다. 마켓플레이스를 추가한 뒤 플러그인을 설치하면 됩니다.
 
-## 마켓플레이스 추가
+## 설치
 
 ```
-/plugin marketplace add comeddy/claude-plugins
+/plugin marketplace add comeddy/blog-precheck-plugin
+/plugin install blog-precheck@comeddy
 ```
 
-터미널에서는 `claude plugin marketplace add comeddy/claude-plugins`를 실행합니다. 업데이트는 `/plugin marketplace update comeddy`로 받습니다.
+터미널에서는 같은 명령을 `claude plugin marketplace add comeddy/blog-precheck-plugin`, `claude plugin install blog-precheck@comeddy`로 실행합니다. 업데이트는 `/plugin marketplace update comeddy`로 받습니다. 설치하면 `/blog-precheck:blog-precheck` 스킬이 생깁니다.
 
 ## 플러그인
 
@@ -31,16 +32,17 @@ blog-precheck은 원고를 리뷰어에게 넘기기 전에 6개 기준으로 �
 
 미달 항목만 고쳐 다시 채점하고, 이 자기검열은 최대 2회까지 반복합니다. 2회 후에도 미달이면 미달 항목을 리포트에 적은 채 리뷰어에게 넘깁니다. 배점, 채점 원칙, 리포트 형식은 [blog-precheck README](plugins/blog-precheck/README.md#셀프-게이트-기준-gate-reportmd)에 있습니다.
 
-## 플러그인 추가하기
-
-새 플러그인은 `plugins/<이름>/` 아래에 두고 `.claude-plugin/marketplace.json`의 `plugins` 목록에 한 항목을 더합니다.
+## 저장소 구조
 
 ```
-.claude-plugin/marketplace.json       # 마켓플레이스 정의 (플러그인 목록)
-plugins/<이름>/
-├── .claude-plugin/plugin.json        # 플러그인 정의
-├── README.md
-└── skills/<스킬>/SKILL.md
+.claude-plugin/marketplace.json           # 마켓플레이스 정의
+plugins/blog-precheck/
+├── .claude-plugin/plugin.json            # 플러그인 정의
+├── README.md                             # 사용법과 게이트 기준 전체
+└── skills/blog-precheck/
+    ├── SKILL.md                          # 워크플로우 본문
+    ├── gate.md                           # 셀프 게이트 가이드
+    └── scripts/redundancy_metrics.py     # 중복과 군더더기 지표
 ```
 
 push하기 전에 `claude plugin validate .`로 매니페스트를 검증합니다.
