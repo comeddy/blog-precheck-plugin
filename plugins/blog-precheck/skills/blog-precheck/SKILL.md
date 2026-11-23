@@ -1,9 +1,9 @@
 ---
 name: blog-precheck
-description: AWS 테크 블로그 저자가 리뷰 요청 전에 본인 원고(docx/md)를 먼저 점검하는 사전 체크. 원고를 WordPress HTML로 변환하고 구조·내용 품질을 리뷰. "블로그 사전 점검", "블로그 셀프 체크", "리뷰 전 점검", "blog precheck", "워드프레스 변환", "publish 문구", "슬랙 문구" 요청 시 사용. 이미지/동영상/테이블 구조 점검 + 유사 블로그 비교 기반 내용 피드백 + 게시 후 Slack publish 문구 작성 포함. WordPress 업로드는 하지 않음.
+description: AWS 기술 블로그 저자가 리뷰 요청 전에 본인 원고(docx/md)를 먼저 점검하는 사전 체크. 원고를 WordPress HTML로 변환하고 구조·내용 품질을 리뷰. "블로그 사전 점검", "블로그 셀프 체크", "리뷰 전 점검", "blog precheck", "워드프레스 변환", "publish 문구", "슬랙 문구" 요청 시 사용. 이미지/동영상/테이블 구조 점검 + 유사 블로그 비교 기반 내용 피드백 + 게시 후 Slack publish 문구 작성 포함. WordPress 업로드는 하지 않음.
 ---
 
-# Blog Precheck — AWS 테크 블로그 WordPress 변환 & 품질 사전 점검 (저자용)
+# Blog Precheck — AWS 기술 블로그 WordPress 변환 & 품질 사전 점검 (저자용)
 
 원고(docx 또는 md)를 WordPress에 붙여넣을 수 있는 HTML로 변환하면서, 구조적 문제를 점검하고 내용 품질 피드백을 제공하는 워크플로우.
 

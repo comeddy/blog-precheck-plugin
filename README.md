@@ -1,6 +1,8 @@
 # blog-precheck-plugin
 
-AWS 테크 블로그 저자용 사전 점검 스킬 blog-precheck을 Claude Code 플러그인으로 배포하는 저장소입니다. 마켓플레이스를 추가한 뒤 플러그인을 설치하면 됩니다.
+AWS 기술 블로그 저자용 사전 점검 스킬 blog-precheck을 Claude Code 플러그인으로 배포하는 저장소입니다. 마켓플레이스를 추가한 뒤 플러그인을 설치하면 됩니다.
+
+> 이 저장소는 개인 프로젝트이며 Amazon Web Services(AWS)의 공식 도구나 제품이 아닙니다. AWS가 보증하거나 지원하지 않습니다.
 
 ## 설치
 
@@ -15,7 +17,7 @@ AWS 테크 블로그 저자용 사전 점검 스킬 blog-precheck을 Claude Code
 
 | 플러그인 | 설치 | 설명 |
 |---|---|---|
-| [blog-precheck](plugins/blog-precheck/README.md) | `/plugin install blog-precheck@comeddy` | AWS 테크 블로그 저자가 리뷰 요청 전에 본인 원고를 먼저 점검합니다. 6개 기준 셀프 게이트 채점, WordPress HTML 변환, 내용 리뷰, 게시 후 Slack 공지 문구 작성을 다룹니다. |
+| [blog-precheck](plugins/blog-precheck/README.md) | `/plugin install blog-precheck@comeddy` | AWS 기술 블로그 저자가 리뷰 요청 전에 본인 원고를 먼저 점검합니다. 6개 기준 셀프 게이트 채점, WordPress HTML 변환, 내용 리뷰, 게시 후 Slack 공지 문구 작성을 다룹니다. |
 
 ### blog-precheck 셀프 게이트 기준 요약
 

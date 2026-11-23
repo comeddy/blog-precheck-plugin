@@ -1,6 +1,8 @@
 # blog-precheck 플러그인
 
-AWS 테크 블로그 저자가 리뷰를 요청하기 전에 본인 원고(docx 또는 md)를 먼저 점검하는 Claude Code 플러그인입니다. 원고를 6개 기준으로 채점하고, WordPress에 붙여넣을 HTML로 변환하고, 저자가 고칠 코멘트 목록을 만듭니다. WordPress에는 아무것도 올리지 않습니다.
+AWS 기술 블로그 저자가 리뷰를 요청하기 전에 본인 원고(docx 또는 md)를 먼저 점검하는 Claude Code 플러그인입니다. 원고를 6개 기준으로 채점하고, WordPress에 붙여넣을 HTML로 변환하고, 저자가 고칠 코멘트 목록을 만듭니다. WordPress에는 아무것도 올리지 않습니다.
+
+> 이 저장소는 개인 프로젝트이며 Amazon Web Services(AWS)의 공식 도구나 제품이 아닙니다. AWS가 보증하거나 지원하지 않습니다.
 
 ## 설치
 
